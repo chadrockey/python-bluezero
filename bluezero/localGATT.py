@@ -372,7 +372,7 @@ class Characteristic(dbus.service.Object):
         if self.write_callback:
             self.write_callback(dbus_tools.dbus_to_python(value),
                                 dbus_tools.dbus_to_python(options))
-        self.Set(constants.GATT_CHRC_IFACE, 'Value', value)
+        #self.Set(constants.GATT_CHRC_IFACE, 'Value', value)
 
     @dbus.service.method(constants.GATT_CHRC_IFACE,
                          in_signature='', out_signature='')
